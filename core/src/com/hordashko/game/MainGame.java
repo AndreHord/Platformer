@@ -6,8 +6,8 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 public class MainGame extends Game {
-	private int wightGame;
-	private int heightGame;
+	private int wightGame = 800;
+	private int heightGame = 480;
 
 	private OrthographicCamera orthographicCamera;
 	
@@ -22,7 +22,8 @@ public class MainGame extends Game {
 
 	@Override
 	public void render () {
-		ScreenUtils.clear(0, 0, 2f, 1);
+		ScreenUtils.clear(0, 1, 3, 1);
+		super.render();
 
 	}
 	
